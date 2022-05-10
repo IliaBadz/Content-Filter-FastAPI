@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  web:
+    build: .
+    env_file:
+      - project/.env
+    ports:
+      - 8000:8000
+
+networks:
+  default:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.16.58.0/24
