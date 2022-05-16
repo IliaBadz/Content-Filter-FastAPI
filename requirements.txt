@@ -1,4 +1,4 @@
-fastapi
-uvicorn
-openai
+fastapi==0.76.0
+uvicorn==0.17.6
+openai==0.18.1
 
